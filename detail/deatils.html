@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Ga+Maamli&family=Marmelad&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="details.css">
+    <title>Details</title>
+</head>
+<body>
+    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+      <div id="follower" class="mouse-effect"></div>
+
+    <header id="navbar">
+        <h1 class="logo">NextGen-WB</h1>
+        <nav class="nav-items">
+            <a href="#home" class="scroll-link" onclick="navigateToSection('home')">Home</a>
+            <a href="#services" class="scroll-link" onclick="navigateToSection('services')">Services</a>
+            <a href="#portfolio" class="scroll-link" onclick="navigateToSection('portfolio')">Portfolio</a>
+            <a href="#contact" class="scroll-link" onclick="navigateToSection('contact')">Contact Us</a>
+            <i class="fa-solid fa-bars" id="menu-open"></i>
+        </nav>
+    
+        <ul class="sidebar" id="sidebar">
+            <li><a href="#home" class="scroll-link" onclick="navigateToSection('home')">Home</a></li>
+            <li><a href="#services" class="scroll-link" onclick="navigateToSection('services')">Services</a></li>
+            <li><a href="#portfolio" class="scroll-link" onclick="navigateToSection('portfolio')">Portfolio</a></li>
+            <li><a href="#contact" class="scroll-link" onclick="navigateToSection('contact')">Contact Us</a></li>
+            <i class="fa-solid fa-xmark" id="menu-close"></i>
+        </ul>
+    </header>
+
+    <div class="detail_section">
+        <!-- Container 1 -->
+        <div class="detail_content">
+            <div class="project_content">
+                <img src="../assets/work1.jpg" alt="project photo">
+            </div>
+            <div class="project_details">
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Full Stack Developer-John Doe</h1>
+                        <p class="person-pricing">$250 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS,React,Node,MongoDB,Express </li>
+                            <li>Experience: 5+ Years</li>
+                            <li>Review: 8.9/10</li>
+                        </ul>
+                        <a  target="_blank" href="../contact/contact.html">
+                           <button class="btn-hire">Hire me</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Frontend Developer - Jordan Belfort</h1>
+                        <p class="person-pricing">$150 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS</li>
+                            <li>Experience: 3 Years</li>
+                            <li>Review: 7/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Full Stack Developer - Jimmi Wae</h1>
+                        <p class="person-pricing">$350 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS,React,Node,MongoDB </li>
+                            <li>Experience: 5+ Years</li>
+                            <li>Review: 8.9/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Container 2 -->
+        <div class="detail_content">
+            <div class="project_content">
+                <img src="../assets/work2.jpg" alt="project photo">
+            </div>
+            <div class="project_details">
+
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Full Stack Developer-John Doe</h1>
+                        <p class="person-pricing">$250 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS,React,Node,MongoDB,Express </li>
+                            <li>Experience: 5+ Years</li>
+                            <li>Review: 8.9/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Frontend Developer - Jordan Belfort</h1>
+                        <p class="person-pricing">$150 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS</li>
+                            <li>Experience: 3 Years</li>
+                            <li>Review: 7/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Full Stack Developer - Jimmi Wae</h1>
+                        <p class="person-pricing">$350 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS,React,Node,MongoDB </li>
+                            <li>Experience: 5+ Years</li>
+                            <li>Review: 8.9/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+
+               
+            </div> 
+        </div>
+
+        <!-- Container 3 -->
+        <div class="detail_content">
+            <div class="project_content">
+                <img src="../assets/work3.jpg" alt="project photo">
+            </div>
+            <div class="project_details">
+
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Full Stack Developer-John Doe</h1>
+                        <p class="person-pricing">$250 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS,React,Node,MongoDB,Express </li>
+                            <li>Experience: 5+ Years</li>
+                            <li>Review: 8.9/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Frontend Developer - Jordan Belfort</h1>
+                        <p class="person-pricing">$150 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS</li>
+                            <li>Experience: 3 Years</li>
+                            <li>Review: 7/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Full Stack Developer - Jimmi Wae</h1>
+                        <p class="person-pricing">$350 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS,React,Node,MongoDB </li>
+                            <li>Experience: 5+ Years</li>
+                            <li>Review: 8.9/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+
+               
+            </div> 
+        </div>
+
+
+        <!-- Container 4 -->
+        <div class="detail_content">
+            <div class="project_content">
+                <img src="../assets/work4.jpg" alt="project photo">
+            </div>
+            <div class="project_details">
+
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Full Stack Developer-John Doe</h1>
+                        <p class="person-pricing">$250 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS,React,Node,MongoDB,Express </li>
+                            <li>Experience: 5+ Years</li>
+                            <li>Review: 8.9/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Frontend Developer - Jordan Belfort</h1>
+                        <p class="person-pricing">$150 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS</li>
+                            <li>Experience: 3 Years</li>
+                            <li>Review: 7/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Full Stack Developer - Jimmi Wae</h1>
+                        <p class="person-pricing">$350 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS,React,Node,MongoDB </li>
+                            <li>Experience: 5+ Years</li>
+                            <li>Review: 8.9/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+
+               
+            </div> 
+        </div>
+
+        <!-- Container 5 -->
+        <div class="detail_content">
+            <div class="project_content">
+                <img src="../assets/work5.jpg" alt="project photo">
+            </div>
+            <div class="project_details">
+
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Full Stack Developer-John Doe</h1>
+                        <p class="person-pricing">$250 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS,React,Node,MongoDB,Express </li>
+                            <li>Experience: 5+ Years</li>
+                            <li>Review: 8.9/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Frontend Developer - Jordan Belfort</h1>
+                        <p class="person-pricing">$150 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS</li>
+                            <li>Experience: 3 Years</li>
+                            <li>Review: 7/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Full Stack Developer - Jimmi Wae</h1>
+                        <p class="person-pricing">$350 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS,React,Node,MongoDB </li>
+                            <li>Experience: 5+ Years</li>
+                            <li>Review: 8.9/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+
+               
+            </div> 
+        </div>
+
+        <!-- Container 6 -->
+        <div class="detail_content">
+            <div class="project_content">
+                <img src="../assets/work6.jpg" alt="project photo">
+            </div>
+            <div class="project_details">
+
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Full Stack Developer-John Doe</h1>
+                        <p class="person-pricing">$250 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS,React,Node,MongoDB,Express </li>
+                            <li>Experience: 5+ Years</li>
+                            <li>Review: 8.9/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Frontend Developer - Jordan Belfort</h1>
+                        <p class="person-pricing">$150 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS</li>
+                            <li>Experience: 3 Years</li>
+                            <li>Review: 7/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+
+                <div class="project_maker">
+                    <div class="accordion">
+                        <h1 class="person-title ">Full Stack Developer - Jimmi Wae</h1>
+                        <p class="person-pricing">$350 <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="panel">
+                        <ul>
+                            <li>Skills: HTML,CSS,JS,React,Node,MongoDB </li>
+                            <li>Experience: 5+ Years</li>
+                            <li>Review: 8.9/10</li>
+                        </ul>
+                        <button class="btn-hire">Hire me</button>
+                    </div>
+                </div>
+
+               
+            </div> 
+        </div>
+
+    </div>
+
+
+    <script>
+
+      // Custom cursor follow effect
+         document.addEventListener('DOMContentLoaded', () => {
+            const follower = document.getElementById('follower');
+            let isHovering = false;
+
+            document.addEventListener('mousemove', (event) => {
+               follower.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+            });
+
+            document.addEventListener('mouseover', (event) => {
+               if (event.target.classList.contains('hover-target')) {
+                  event.target.classList.add('hovered');
+                  follower.classList.add('hovering');
+               }
+            });
+
+            document.addEventListener('mouseout', (event) => {
+               if (event.target.classList.contains('hover-target')) {
+                  event.target.classList.remove('hovered');
+                  follower.classList.remove('hovering');
+               }
+            });
+         });
+         
+         window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            var sticky = navbar.offsetTop;
+
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add('fixed');
+            } else {
+                navbar.classList.remove('fixed');
+            }
+        });
+        function navigateToSection(section) {
+            window.location.href = `../index.html#${section}`;
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            if (window.location.hash) {
+                const sectionID = window.location.hash.substring(1); // Remove the leading '#'
+                const sectionElement = document.getElementById(sectionID);
+                if (sectionElement) {
+                    sectionElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+
+        
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                var panel = this.nextElementSibling;
+                var icon = this.querySelector('.fa-caret-down');
+
+                this.classList.toggle("active");
+                icon.classList.toggle("rotate");
+                
+
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        }
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        window.onscroll = function() {
+            scrollToTopBtn.style.display = window.scrollY > 20 ? "block" : "none";
+        };
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+    const menuOpen = document.getElementById('menu-open');
+    const menuClose = document.getElementById('menu-close');
+    const sidebar = document.getElementById('sidebar');
+
+    if (menuOpen && menuClose && sidebar) {
+        menuOpen.addEventListener('click', () => sidebar.classList.add('open'));
+        menuClose.addEventListener('click', () => sidebar.classList.remove('open'));
+
+        document.querySelectorAll('.sidebar .scroll-link').forEach(link => {
+            link.addEventListener('click', () => sidebar.classList.remove('open'));
+        });
+    }
+});
+    </script>
+    
+</body>
+</html>

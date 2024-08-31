@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Ga+Maamli&family=Marmelad&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>WebBuilder</title>
+   </head>
+   <body>
+    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <div id="follower" class="mouse-effect"></div>
+    <header id="navbar">
+        <h1 class="logo">NextGen-WB</h1>
+        <nav class="nav-items">
+            <a href="#home" class="scroll-link" onclick="navigateToSection('home')">Home</a>
+            <a href="#services" class="scroll-link" onclick="navigateToSection('services')">Services</a>
+            <a href="#portfolio" class="scroll-link" onclick="navigateToSection('portfolio')">Portfolio</a>
+            <a href="#contact" class="scroll-link" onclick="navigateToSection('contact')">Contact Us</a>
+            <button id="login-button" onclick="navigateToLogin()">Login</button>
+            <i class="fa-solid fa-bars" id="menu-open"></i>
+        </nav>
+    
+        <ul class="sidebar" id="sidebar">
+            <li><a href="#home" class="scroll-link" onclick="navigateToSection('home')">Home</a></li>
+            <li><a href="#services" class="scroll-link" onclick="navigateToSection('services')">Services</a></li>
+            <li><a href="#portfolio" class="scroll-link" onclick="navigateToSection('portfolio')">Portfolio</a></li>
+            <li><a href="#contact" class="scroll-link" onclick="navigateToSection('contact')">Contact Us</a></li>
+            <button id="login-button" onclick="navigateToLogin()">Login</button>
+            <i class="fa-solid fa-xmark" id="menu-close"></i>
+        </ul>
+    </header>
+
+    <!-- Home section -->
+    <div id="home">
+        <div class="home-text-content">
+            <h1 class="welcome hover-target">Welcome To</h1>
+            <h1 class="heading hover-target">NextGen-Web-Builder</h1>
+            <div class="scroll-down">
+                <img src="./assets/mouse-scroll-black.gif" alt="">
+            </div>
+        </div>
+        <img src="./assets/circle.png" alt="" class="overlaybg">
+    </div>
+
+    <!-- Service section -->
+    <div id="services">
+       <h1 class="title">Services</h1>
+        <div class="services_container">
+            <div class="services_content">
+                <h1>01 <br> Website Design</h1>
+                <img  src="/assets/web-design.png" alt="">
+            </div>
+            <div class="services_content">
+                <h1>02 <br> Ecommerce Developement</h1>
+                <img src="/assets/ecom.png" alt="">
+            </div>
+            <div class="services_content">
+                <h1>03 <br> SEO optimization</h1>
+                <img src="/assets/seo.png" alt="">
+            </div>
+            <div class="services_content">
+                <h1>04 <br> UI/UX Designing</h1>
+                <img src="/assets/uiux-design.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <h1 class="title">Portfolio</h1>
+        <div class="wrapper"> 
+            <i id="left" class="fa-solid  fas fa-angle-left"></i> 
+            <ul class="carousel"> 
+                <li class="card"> 
+                    <div class="img">
+                        <img src="./assets/work1.jpg" alt="" draggable="false"> 
+                    </div> 
+                    <h2>Restaurant</h2> 
+                    <span>Food Website</span> 
+                    <a href="./detail/deatils.html" target="_blank">
+                        <button class="btn-details">View Details</button>
+                    </a>
+                </li> 
+                <li class="card"> 
+                    <div class="img">
+                        <img src="./assets/work2.jpg" alt="" draggable="false"> 
+                    </div> 
+                    <h2>Fruitables</h2> 
+                    <span>Online Fruit Store</span> 
+                    <a  href="./detail/deatils.html" target="_blank">
+                        <button class="btn-details">View Details</button>
+                    </a>
+                </li> 
+                <li class="card"> 
+                    <div class="img">
+                        <img src="./assets/work3.jpg" alt="" draggable="false"> 
+                    </div> 
+                    <h2>Next Prest</h2> 
+                    <span>Fashion Platform</span> 
+                    <a  href="./detail/deatils.html" target="_blank">
+                        <button class="btn-details">View Details</button>
+                    </a>
+                </li> 
+                <li class="card"> 
+                    <div class="img">
+                        <img src="./assets/work4.jpg" alt="" draggable="false"> 
+                    </div> 
+                    <h2>EduBin</h2> 
+                    <span>Education Website</span> 
+                    <a  href="./detail/deatils.html" target="_blank">
+                        <button class="btn-details">View Details</button>
+                    </a>
+                </li> 
+                <li class="card"> 
+                    <div class="img">
+                        <img src="./assets/work5.jpg" alt="" draggable="false"> 
+                    </div> 
+                    <h2>dirEngine</h2> 
+                    <span>Tourism Website</span> 
+                    <a  href="./detail/deatils.html" target="_blank">
+                        <button class="btn-details">View Details</button>
+                    </a>
+                </li> 
+                <li class="card"> 
+                    <div class="img">
+                        <img src="./assets/work6.jpg" alt="" draggable="false"> 
+                    </div> 
+                    <h2>Water land</h2> 
+                    <span>Amusement park Website</span> 
+                    <a  href="./detail/deatils.html" target="_blank">
+                        <button class="btn-details">View Details</button>
+                    </a>
+                </li> 
+            </ul> 
+
+            <i id="right" class="fa-solid fas fa-angle-right"></i> 
+        </div> 
+    </div>
+    
+    <!-- Contact -->
+    <div id="contact">
+      <div class="contact_container">
+         <h1 class="hover-target">Contact To Get Pricing</h1>
+         <div class="contact_info">
+            <p><i class="fa-solid fa-phone"></i>+91-9004192909</p>
+            <p><i class="fa-solid fa-location-dot"></i>Location: Borivali, Mumbai</p>
+            <p><i class="fa-regular fa-envelope"></i>webbuilder@gmai.com</p>
+         </div>
+      </div>
+      <div class="contact_content">
+         <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=dhruvparmardp29@gmail.com">
+         <button class="btn fifth btns" name="button_5" title="Button 5" fdprocessedid="lc2ab">Contact Us</button>
+         </a>
+         <div class="slider-thumb"></div>
+      </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

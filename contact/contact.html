@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Ga+Maamli&family=Marmelad&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <title>Contact Us</title>
+   <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+   <div id="follower" class="mouse-effect"></div>
+   <div class="contact_form">
+      
+      <div class="container">
+
+         <div class="form_wrapper">
+            <form id="contactForm" method="post" action="https://script.google.com/macros/s/AKfycbz5vdMpt83-WIr9XK4yTjOz7-6yrCvUmnNHI4ttrFriO43y2OQ3WOw4t3h5k4LC98s/exec">
+            
+            
+            <label for="fname">Your Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your Name" required>
+            
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="service">Service Required:</label>
+            <input type="text" id="service" name="service" placeholder="website type.." required>
+            
+            <label for="person">Assigned Person's name:</label>
+            <input type="text" id="person" name="person" placeholder="Person whom you want to give your work.." required>
+            
+            <label for="budget">Budget:</label>
+            <input type="number" id="budget" name="budget" placeholder="For ex: $300-500" required>
+   
+            <label for="request">Any Other Request ?</label>
+            <textarea id="request" name="request" placeholder="Write something.." style="height:100px"></textarea>
+
+            <button type="submit">Submit</button>
+
+         </form>
+         </div>
+
+      </div>
+   </div>
+
+      <div id="loadingOverlay" class="loading-overlay">
+            <div class="spinner"></div>
+            <p>Submitting...</p>
+      </div>
+      <!-- Modal -->
+      <div id="successModal" class="modal">
+         <div class="modal-content">
+           <span class="close">&times;</span>
+           <p>Form submitted successfully, Our team will reachout you shortly :)</p>
+         </div>
+       </div>
+
+   <script src="./contact.js"></script>
+</body>
+</html>
